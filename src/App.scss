@@ -1,0 +1,92 @@
+$red: #e10241;
+$black: #030303;
+$white: #ffff;
+$gray: #7d7d7d;
+
+@font-face {
+	font-family: 'senzoku';
+	src: url('./assets/senzoku.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.app {
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+/*-----тут часть с хедером---------*/
+
+.logo_container {
+	display: flex;
+	gap: 0.833vw;
+	align-items: center;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 2vw;
+	height: auto;
+}
+
+.logo_name {
+	font-family: senzoku;
+	color: $red;
+	font-size: 1.667vw;
+}
+
+.name_container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color: $red;
+	font-size: 1.667vw;
+}
+
+.name {
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	margin-bottom: -0.8vw;
+}
+
+.surname {
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+.text1 {
+	font-size: 4vw;
+	color: $white;
+	font-weight: 600;
+	letter-spacing: 11%;
+	height: 3.5vw;
+}
+
+.text2 {
+	font-size: 4vw;
+	color: $red;
+	letter-spacing: 11%;
+	font-weight: 600;
+	height: 3.5vw;
+}
+
+.text3 {
+	color: $gray;
+	font-size: 1.25vw;
+	padding-top: 5vw;
+}
+
+u {
+	text-decoration: none; /* Отключаем стандартное подчеркивание */
+	display: inline-block; /* Включаем поддержку отступов */
+	line-height: 1; /* Убираем лишние системные отступы */
+
+	border-bottom: 2px solid; /* Задаем толщину линии (2px) и ее стиль */
+	padding-bottom: 10px; /* Сдвигаем линию ровно на 10px от текста */
+}

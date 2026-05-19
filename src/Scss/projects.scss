@@ -1,0 +1,125 @@
+$red: #e10241;
+$black: #030303;
+$white: #ffff;
+$gray: #7d7d7d;
+$opendark: #0f0f0f;
+
+.projects {
+	background-color: $black;
+	padding-left: 2.6vw;
+	padding-right: 2.6vw;
+	overflow: hidden;
+	scroll-snap-align: start;
+	height: 100vh;
+}
+
+.number {
+	font-family: 'GFS Didot', serif;
+	font-size: 3vw;
+	color: $red;
+	font-weight: 400;
+	height: 2.5vw;
+}
+
+.info {
+	color: $gray;
+	font-size: 1.25vw;
+	padding-top: 2vw;
+}
+
+.main_projects {
+	display: flex;
+	flex-direction: row;
+	height: -webkit-fill-available;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-top: 10vh;
+}
+
+.main_projects_container {
+	padding-left: 2vw;
+
+	padding-bottom: 10vh;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5vw;
+	padding-left: 10vw;
+	padding-right: 5vw;
+
+	align-content: flex-start;
+	width: 100%;
+
+	perspective: 2000px;
+}
+
+.card {
+	position: relative;
+	width: 20vw;
+	height: 20vw;
+
+	transform-style: preserve-3d;
+	transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+	will-change: transform;
+}
+
+.card::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: 12px;
+
+	background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(225, 2, 65, 0.25), transparent 60%);
+
+	opacity: 0;
+	transition: opacity 0.4s;
+	pointer-events: none;
+}
+
+.card:hover {
+	transform: rotateY(160deg) scale(1.02);
+	width: 20vw;
+}
+
+.card-front,
+.card-back {
+	position: absolute;
+	width: 20vw;
+	top: 0;
+	left: 0;
+
+	backface-visibility: hidden;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.card-front {
+	transform: translateZ(40px);
+	width: 20vw;
+}
+
+.link-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 10;
+}
+
+.card-back {
+	position: absolute;
+	width: 20vw;
+	transform: rotateY(180deg) translateZ(20px);
+	backface-visibility: hidden;
+	img {
+		width: 20vw;
+	}
+}
+
+.click-layer {
+	width: 20vw;
+	position: absolute;
+	inset: 0;
+	z-index: 10;
+}
