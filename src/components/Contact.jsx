@@ -1,6 +1,6 @@
 import '../Scss/Contact.scss'
 
-import hand from '../assets/hand.png'
+import hand from '../assets/hand.webp'
 import instagram from '../assets/instagram.svg'
 import github from '../assets/github.svg'
 import gmail from '../assets/gmail.svg'

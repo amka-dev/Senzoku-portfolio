@@ -1,10 +1,10 @@
 import '../Scss/projects.scss'
-import cart1 from '../assets/cart1.png'
-import cart2 from '../assets/cart2.png'
-import cart3 from '../assets/cart3.png'
-import cart4 from '../assets/cart4.png'
-import cart5 from '../assets/cart5.png'
-import cart6 from '../assets/cart6.png'
+import cart1 from '../assets/cart1.webp'
+import cart2 from '../assets/cart2.webp'
+import cart3 from '../assets/cart3.webp'
+import cart4 from '../assets/cart4.webp'
+import cart5 from '../assets/cart5.webp'
+import cart6 from '../assets/cart6.webp'
 import { useRef, useState, useEffect } from 'react'
 
 export default function Projects() {

@@ -1,7 +1,12 @@
 import '../Scss/Skills.scss'
 import { useEffect, useRef, useState } from 'react'
-import aristotel2 from '../assets/aristotel2.png'
-import react from '../assets/react.png'
+import aristotel2 from '../assets/aristotel2.webp'
+import react from '../assets/react.webp'
+import html from '../assets/html.webp'
+import css from '../assets/css.webp'
+import js from '../assets/js.webp'
+import ts from '../assets/ts.webp'
+import cube from '../assets/cube.webp'
 
 export default function Skills() {
 	const [visible, setVisible] = useState(false)
@@ -27,12 +32,12 @@ export default function Skills() {
 	}, [])
 
 	const skills = [
-		{ name: 'React', percent: 90 },
-		{ name: 'HTML5', percent: 95 },
-		{ name: 'SCSS', percent: 88 },
-		{ name: 'JavaScript', percent: 82 },
-		{ name: 'TypeScript', percent: 30 },
-		{ name: '3D', percent: 75 }
+		{ name: 'React', percent: 90, icon: react },
+		{ name: 'HTML5', percent: 95, icon: html },
+		{ name: 'SCSS', percent: 88, icon: css },
+		{ name: 'JavaScript', percent: 82, icon: js },
+		{ name: 'TypeScript', percent: 30, icon: ts },
+		{ name: '3D', percent: 75, icon: cube }
 	]
 
 	return (
@@ -62,7 +67,7 @@ export default function Skills() {
 					{skills.map((skill, index) => (
 						<div className='skill' key={index}>
 							<div className='skill_icon'>
-								<img src={react} alt='' />
+								<img src={skill.icon} alt='icon' />
 							</div>
 
 							<div className='skill_wrap'>

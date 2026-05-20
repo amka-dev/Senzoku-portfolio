@@ -1,5 +1,5 @@
 import '../Scss/aboutme.scss'
-import mikilanjelo from '../assets/mikilanjelo.png'
+import mikilanjelo from '../assets/mikilanjelo.webp'
 
 export default function Aboutme() {
 	return (
