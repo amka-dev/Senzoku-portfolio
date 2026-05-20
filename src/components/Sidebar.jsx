@@ -8,13 +8,15 @@ export default function Sidebar() {
 	return (
 		<div className='sidebar'>
 			<div className='links'>
-				<a href=''>
+				<a href='#about'>
 					<p>ABOUT</p>
 				</a>
-				<a href=''>
+
+				<a href='#projects'>
 					<p>PROJECTS</p>
 				</a>
-				<a href=''>
+
+				<a href='#skills'>
 					<p>SKILLS</p>
 				</a>
 			</div>

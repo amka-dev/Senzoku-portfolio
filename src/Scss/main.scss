@@ -3,13 +3,18 @@ $black: #030303;
 $white: #ffff;
 $gray: #7d7d7d;
 
-/*-----тут часть с мейном-------*/
+.hero {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
 
 .main_container {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	scroll-snap-align: start;
+	padding-top: 2vw;
 }
 
 .info_wrap {
@@ -32,22 +37,14 @@ $gray: #7d7d7d;
 
 .main {
 	background-color: $black;
-	height: calc(100vh - 2vw);
-	padding-top: 2vw;
-	padding-left: 2.6vw;
-	padding-right: 2.6vw;
+	height: 100vh;
+
+	padding-left: clamp(12px, 2.6vw, 60px);
+	padding-right: clamp(12px, 2.6vw, 60px);
 }
 
 .aristotel {
 	height: 100%;
-}
-
-.number {
-	font-family: 'GFS Didot', serif;
-	font-size: 3vw;
-	color: $red;
-	font-weight: 400;
-	height: 2.5vw;
 }
 
 .main_info_container {
@@ -91,5 +88,43 @@ $gray: #7d7d7d;
 	100% {
 		transform: translateY(0) rotate(45deg);
 		opacity: 0.2;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.main {
+		padding: none;
+	}
+
+	.main_info {
+		padding-top: 20px;
+		align-items: center;
+		text-align: center;
+		height: auto;
+	}
+
+	.info_wrap {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		align-items: center;
+		overflow: hidden;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.arrows {
+		display: none;
+	}
+
+	.canvas_wrap {
+		width: 100%;
+		height: 40vh;
 	}
 }

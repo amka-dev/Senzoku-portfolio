@@ -6,7 +6,7 @@ export default function Aboutme() {
 		<div className='aboutme'>
 			<div className='main_about'>
 				<div className='main_about_container'>
-					<h2 className='number'>II</h2>
+					<h2 className='number'>- II -</h2>
 
 					<h1 className='text1'>ABOUT</h1>
 

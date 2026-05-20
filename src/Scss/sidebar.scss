@@ -1,19 +1,20 @@
 .sidebar {
 	position: fixed;
-	top: 9vw;
-	right: 3vw;
+	top: 52%;
+	transform: translate(0, -50%);
+	right: clamp(12px, 3vw, 60px);
+	gap: clamp(20px, 4.5vw, 80px);
 	z-index: 1000;
 	display: flex;
 	flex-direction: column;
-	gap: 4.5vw;
+	align-items: center;
 }
 
 .socials {
-	width: 1.95vw;
-	height: 1.95vw;
+	width: clamp(18px, 1.95vw, 34px);
+	gap: clamp(10px, 1.25vw, 24px);
 	display: flex;
 	flex-direction: column;
-	gap: 1.25vw;
 	align-items: center;
 }
 
@@ -25,12 +26,18 @@
 	transform: rotate(-0deg);
 
 	a {
-		font-size: 1.25vw;
+		font-size: clamp(12px, 1.25vw, 22px);
 		color: #b9b9b9;
 		font-weight: 600;
 		transition: color 0.3s ease-in-out;
 		&:hover {
 			color: white;
 		}
+	}
+}
+
+@media (max-width: 768px) {
+	.sidebar {
+		display: none;
 	}
 }

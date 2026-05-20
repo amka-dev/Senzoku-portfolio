@@ -1,0 +1,179 @@
+$red: #e10241;
+$black: #030303;
+$white: #ffffff;
+$gray: #7d7d7d;
+$opendark: #0f0f0f;
+
+.skills {
+	background-color: $opendark;
+	padding-left: clamp(12px, 2.6vw, 60px);
+	padding-right: clamp(12px, 2.6vw, 60px);
+	overflow: hidden;
+	scroll-snap-align: start;
+	height: 100vh;
+}
+
+.main_skills {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	height: 100%;
+	position: relative;
+	padding-right: 7vw;
+}
+
+.main_skills_container {
+	width: 25%;
+	z-index: 2;
+	padding-top: 10vw;
+	padding-left: 2vw;
+}
+.info {
+	color: $gray;
+	font-size: clamp(12px, 1.25vw, 20px);
+	padding-top: clamp(10px, 2vw, 30px);
+}
+
+.photo_skills {
+	position: absolute;
+	left: 30%;
+	transform: translateX(-50%);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.book_man {
+	width: clamp(220px, 50vw, 600px);
+	height: stretch;
+	opacity: 0.9;
+}
+
+.skills_container {
+	gap: clamp(10px, 2vw, 24px);
+	padding-top: clamp(60px, 10vw, 140px);
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+}
+
+.skill {
+	display: flex;
+	flex-direction: row;
+	gap: clamp(3vw, 0.25vw, 0.25vw);
+}
+
+.skill_wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.skill_top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	h3 {
+		color: $white;
+		font-size: clamp(14px, 0.8vw, 16px);
+		font-weight: 500;
+	}
+
+	span {
+		color: $red;
+		font-weight: 500;
+		font-size: clamp(14px, 0.9vw, 18px);
+	}
+}
+
+.skill_bar {
+	width: 100%;
+	height: clamp(4px, 0.45vw, 8px);
+	background-color: #1b1b1b;
+	border-radius: 10vw;
+	overflow: hidden;
+}
+
+.skill_fill {
+	height: 100%;
+	background: linear-gradient(90deg, $red, #ff4d7d);
+	border-radius: 10vw;
+
+	transition: width 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.skill_icon {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.main_skills {
+		width: auto;
+		z-index: 2;
+		padding-top: 10vw;
+		padding-left: 0;
+		padding-right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.skills_container {
+		width: 90%;
+		position: absolute;
+		padding-top: 0;
+		bottom: 120px;
+		right: 20px;
+		gap: 20px;
+	}
+
+	.main_skills_container {
+		width: auto;
+		width: auto;
+		z-index: 2;
+		padding-top: 10vw;
+		padding-left: 2vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.photo_skills {
+		position: relative;
+		left: -100px;
+		transform: none;
+	}
+
+	.book_man {
+		display: none;
+	}
+
+	.skill_icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 35px;
+		height: 35px;
+		padding: 5px;
+		background-color: #2a2a2a;
+		border-radius: 5px;
+		border: 1px solid #353535;
+
+		img {
+			width: 20px;
+		}
+	}
+
+	.skill_wrap {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: center;
+		gap: 10px;
+	}
+}

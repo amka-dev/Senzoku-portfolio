@@ -10,12 +10,52 @@ $gray: #7d7d7d;
 	font-style: normal;
 }
 
-.app {
-	height: 100vh;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
 	scroll-behavior: smooth;
 }
 
-/*-----тут часть с хедером---------*/
+body {
+	background-color: $black;
+	font-family: sans-serif;
+
+	overflow: hidden;
+}
+
+#root {
+	height: 100vh;
+}
+
+.app {
+	height: 100vh;
+
+	overflow-y: scroll;
+
+	scroll-snap-type: y mandatory;
+
+	-webkit-overflow-scrolling: touch;
+
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+
+.app::-webkit-scrollbar {
+	display: none;
+}
+
+.app section {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+
+	min-height: 100vh;
+
+	position: relative;
+}
 
 .logo_container {
 	display: flex;
@@ -29,14 +69,14 @@ $gray: #7d7d7d;
 }
 
 .logo {
-	width: 2vw;
+	width: clamp(24px, 2vw, 42px);
 	height: auto;
 }
 
 .logo_name {
 	font-family: senzoku;
 	color: $red;
-	font-size: 1.667vw;
+	font-size: clamp(16px, 1.3vw, 28px);
 }
 
 .name_container {
@@ -44,16 +84,16 @@ $gray: #7d7d7d;
 	flex-direction: column;
 	align-items: flex-end;
 	color: $red;
-	font-size: 1.667vw;
-}
 
+	font-size: clamp(14px, 1.3vw, 26px);
+	gap: clamp(6px, 0.6vw, 12px);
+}
 .name {
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
 	margin-bottom: -0.8vw;
 }
-
 .surname {
 	font-weight: 500;
 	margin: 0;
@@ -61,7 +101,7 @@ $gray: #7d7d7d;
 }
 
 .text1 {
-	font-size: 4vw;
+	font-size: clamp(28px, 4vw, 72px);
 	color: $white;
 	font-weight: 600;
 	letter-spacing: 11%;
@@ -69,7 +109,7 @@ $gray: #7d7d7d;
 }
 
 .text2 {
-	font-size: 4vw;
+	font-size: clamp(28px, 4vw, 72px);
 	color: $red;
 	letter-spacing: 11%;
 	font-weight: 600;
@@ -78,15 +118,61 @@ $gray: #7d7d7d;
 
 .text3 {
 	color: $gray;
-	font-size: 1.25vw;
-	padding-top: 5vw;
+	font-size: clamp(14px, 1.2vw, 24px);
+	padding-top: clamp(20px, 5vw, 80px);
+	line-height: 160%;
+}
+
+.number {
+	font-family: 'GFS Didot', serif;
+	color: $red;
+	font-weight: 400;
+	font-size: clamp(20px, 7vw, 48px);
+	height: auto;
 }
 
 u {
-	text-decoration: none; /* Отключаем стандартное подчеркивание */
-	display: inline-block; /* Включаем поддержку отступов */
-	line-height: 1; /* Убираем лишние системные отступы */
+	text-decoration: none;
+	display: inline-block;
+	line-height: 1;
 
-	border-bottom: 2px solid; /* Задаем толщину линии (2px) и ее стиль */
-	padding-bottom: 10px; /* Сдвигаем линию ровно на 10px от текста */
+	border-bottom: 2px solid;
+	padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+	.logo {
+		width: 8vw;
+	}
+
+	.logo_name {
+		font-size: 5vw;
+	}
+
+	.name_container {
+		font-size: 4vw;
+	}
+
+	.text1,
+	.text2 {
+		font-size: 10vw;
+		height: auto;
+		text-align: center;
+	}
+
+	.text3 {
+		font-size: 4vw;
+		padding-top: 8vw;
+		text-align: center;
+	}
+
+	u {
+		padding-bottom: 4px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		overflow: auto;
+	}
 }
