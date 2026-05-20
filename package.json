@@ -2,11 +2,12 @@
 	"name": "senzoku",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://amka-dev.github.io/Senzoku-portfolio/",
 	"scripts": {
-		"build": "vite build",
+		"build": "react-scripts build",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist",
-		"dev": "vite"
+		"deploy": "gh-pages -d build",
+		"start": "react-scripts start"
 	},
 	"browserslist": {
 		"production": [
@@ -40,5 +41,8 @@
 		"react-scripts": "5.0.1",
 		"three": "^0.184.0",
 		"web-vitals": "^2.1.4"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.3.0"
 	}
 }
