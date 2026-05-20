@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Senzoku-portfolio/static/css/main.42242d98.css",
+    "main.js": "/Senzoku-portfolio/static/js/main.32cd3605.js",
+    "static/media/hand.webp": "/Senzoku-portfolio/static/media/hand.e0aebeb0cd00d2883c4e.webp",
+    "static/media/mikilanjelo.webp": "/Senzoku-portfolio/static/media/mikilanjelo.a90420ee3bb5364841c7.webp",
+    "static/media/cart6.webp": "/Senzoku-portfolio/static/media/cart6.04a6de6980e320354469.webp",
+    "static/media/aristotel2.webp": "/Senzoku-portfolio/static/media/aristotel2.c3eed415aaf7241092df.webp",
+    "static/media/cart5.webp": "/Senzoku-portfolio/static/media/cart5.94c9492dd1b1b7e945a4.webp",
+    "static/media/cart2.webp": "/Senzoku-portfolio/static/media/cart2.8f2c639fa6be75d84362.webp",
+    "static/media/cart4.webp": "/Senzoku-portfolio/static/media/cart4.f815b571c66e569722d2.webp",
+    "static/media/cart3.webp": "/Senzoku-portfolio/static/media/cart3.6789ce127d5d5f41e3f7.webp",
+    "static/media/cart1.webp": "/Senzoku-portfolio/static/media/cart1.b6358ad3cf6bca0b17eb.webp",
+    "static/media/react.webp": "/Senzoku-portfolio/static/media/react.d1ec8bb1fa83f8b13320.webp",
+    "static/media/css.webp": "/Senzoku-portfolio/static/media/css.d62def9f4ff37cc69e7a.webp",
+    "static/media/cube.webp": "/Senzoku-portfolio/static/media/cube.7a0ac100da5f28334e14.webp",
+    "static/media/html.webp": "/Senzoku-portfolio/static/media/html.f865362a03485fa1e94c.webp",
+    "static/media/js.webp": "/Senzoku-portfolio/static/media/js.cc3c316f50659d893dc0.webp",
+    "static/media/senzoku.ttf": "/Senzoku-portfolio/static/media/senzoku.2e64f846cac75b04e5b8.ttf",
+    "static/media/ts.webp": "/Senzoku-portfolio/static/media/ts.1acb408e0e95ef3de1da.webp",
+    "static/media/whatsapp.svg": "/Senzoku-portfolio/static/media/whatsapp.9ff4bd0228033bc2fcd0389cc0eb09b9.svg",
+    "static/media/github.svg": "/Senzoku-portfolio/static/media/github.fe8f547c7db2361add46f794e6b383fa.svg",
+    "index.html": "/Senzoku-portfolio/index.html",
+    "static/media/telegram.svg": "/Senzoku-portfolio/static/media/telegram.60d2902984e280460543fc3295753c9d.svg",
+    "static/media/gmail.svg": "/Senzoku-portfolio/static/media/gmail.bfff420eda633d3f488178489e5c94bd.svg",
+    "static/media/logosenzoku.svg": "/Senzoku-portfolio/static/media/logosenzoku.61894245156e585386c66d5633810252.svg",
+    "main.42242d98.css.map": "/Senzoku-portfolio/static/css/main.42242d98.css.map",
+    "main.32cd3605.js.map": "/Senzoku-portfolio/static/js/main.32cd3605.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42242d98.css",
+    "static/js/main.32cd3605.js"
+  ]
+}
