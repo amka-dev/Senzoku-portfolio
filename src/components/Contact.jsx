@@ -1,7 +1,7 @@
 import '../Scss/Contact.scss'
 
 import hand from '../assets/hand.webp'
-import instagram from '../assets/instagram.svg'
+import whatsapp from '../assets/whatsapp.svg'
 import github from '../assets/github.svg'
 import gmail from '../assets/gmail.svg'
 import telegram from '../assets/telegram.svg'
@@ -29,19 +29,24 @@ export default function Contact() {
 				</div>
 
 				<div className='contact_icons'>
-					<a className='link_white' href='https://t.me/yourtelegram' target='_blank' rel='noreferrer'>
+					<a className='link_white' href='https://t.me/amka_dev' target='_blank' rel='noreferrer'>
 						<img src={telegram} alt='' />
 					</a>
 
-					<a className='link_red' href='https://instagram.com/yourinstagram' target='_blank' rel='noreferrer'>
-						<img src={instagram} alt='' />
+					<a className='link_red' href='https://wa.me/+905510201707' target='_blank' rel='noreferrer'>
+						<img src={whatsapp} alt='' />
 					</a>
 
-					<a className='link_white' href='https://github.com/yourgithub' target='_blank' rel='noreferrer'>
+					<a
+						className='link_white'
+						href='mailto:nasifullinamir064@gmail.com'
+						target='_blank'
+						rel='noreferrer'
+					>
 						<img src={gmail} alt='' />
 					</a>
 
-					<a className='link_red' href='https://behance.net/yourbehance' target='_blank' rel='noreferrer'>
+					<a className='link_red' href='https://github.com/amka-dev' target='_blank' rel='noreferrer'>
 						<img src={github} alt='' />
 					</a>
 				</div>

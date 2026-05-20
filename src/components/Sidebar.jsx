@@ -1,5 +1,5 @@
 import '../Scss/sidebar.scss'
-import instagram from '../assets/instagram.svg'
+import whatsapp from '../assets/whatsapp.svg'
 import github from '../assets/github.svg'
 import gmail from '../assets/gmail.svg'
 import telegram from '../assets/telegram.svg'
@@ -22,7 +22,7 @@ export default function Sidebar() {
 			</div>
 			<div className='socials'>
 				<img src={telegram} alt='telegram' />
-				<img src={instagram} alt='instagram' />
+				<img src={whatsapp} alt='whatsapp' />
 				<img src={gmail} alt='gmail' />
 				<img src={github} alt='github' />
 			</div>
