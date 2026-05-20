@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Senzoku-portfolio/static/css/main.42242d98.css",
-    "main.js": "/Senzoku-portfolio/static/js/main.32cd3605.js",
+    "main.js": "/Senzoku-portfolio/static/js/main.472cdaaa.js",
     "static/media/hand.webp": "/Senzoku-portfolio/static/media/hand.e0aebeb0cd00d2883c4e.webp",
     "static/media/mikilanjelo.webp": "/Senzoku-portfolio/static/media/mikilanjelo.a90420ee3bb5364841c7.webp",
     "static/media/cart6.webp": "/Senzoku-portfolio/static/media/cart6.04a6de6980e320354469.webp",
@@ -25,10 +25,10 @@
     "static/media/gmail.svg": "/Senzoku-portfolio/static/media/gmail.bfff420eda633d3f488178489e5c94bd.svg",
     "static/media/logosenzoku.svg": "/Senzoku-portfolio/static/media/logosenzoku.61894245156e585386c66d5633810252.svg",
     "main.42242d98.css.map": "/Senzoku-portfolio/static/css/main.42242d98.css.map",
-    "main.32cd3605.js.map": "/Senzoku-portfolio/static/js/main.32cd3605.js.map"
+    "main.472cdaaa.js.map": "/Senzoku-portfolio/static/js/main.472cdaaa.js.map"
   },
   "entrypoints": [
     "static/css/main.42242d98.css",
-    "static/js/main.32cd3605.js"
+    "static/js/main.472cdaaa.js"
   ]
 }
